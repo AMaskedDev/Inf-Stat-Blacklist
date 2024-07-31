@@ -1,6 +1,6 @@
-local bannedPlayers = {""}
+local allowedPlayers = {"SprouteRL", "tyuzulizae"}
 
 local thisPlayer = game:GetService("Players").LocalPlayer
-if table.find(bannedPlayers, thisPlayer.Name) then 
-  thisPlayer:Kick("You are blacklisted. sry lol")
+if not table.find(allowedPlayers, thisPlayer.Name) then 
+  thisPlayer:Kick("You are not whitelisted. sry lol")
 end
