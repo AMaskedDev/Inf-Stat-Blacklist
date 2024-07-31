@@ -1,4 +1,4 @@
-local allowedPlayers = {"SprouteRL", "tyuzulizae"}
+local allowedPlayers = {"", "tyuzulizae"}
 
 local thisPlayer = game:GetService("Players").LocalPlayer
 if not table.find(allowedPlayers, thisPlayer.Name) then 
